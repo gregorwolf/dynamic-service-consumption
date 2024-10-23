@@ -14,11 +14,13 @@ class CustomizingService extends cds.ApplicationService {
         const service = services[i];
         const metadataResponse = await executeHttpRequest(
           { destinationName: service.destination },
-          { url: `${service.path}$metadata` }
+          { method: "GET", url: `${service.path}$metadata` }
         );
         const metadata = metadataResponse.data;
         // REVISIT: Can we also get CDS back?
-        const csn = await edmx2csn(metadata, service.name, {});
+        const csn = await edmx2csn(metadata, service.name, {
+          odataVersion: "V2",
+        });
         LOG.debug(csn);
         const serviceConnection = await cds.connect.to(service.name, {
           kind: "odata",

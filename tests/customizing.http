@@ -1,7 +1,7 @@
 ###
-GET http://localhost:4005/customizing/Service
+GET http://localhost:4005/odata/v4/customizing/Service
 ###
-POST http://localhost:4005/customizing/loadServices
+POST http://localhost:4005/odata/v4/customizing/loadServices
 Content-Type: application/json
 
 {}

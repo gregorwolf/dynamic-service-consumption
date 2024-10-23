@@ -1,2 +1,2 @@
 ###
-GET http://localhost:4005/dynamic/Services
+GET http://localhost:4005/odata/v4/dynamic/Services

@@ -1,0 +1,6 @@
+###
+GET http://localhost:4005/odata/v4/-data/
+Authorization: Basic alice:
+###
+GET http://localhost:4005/odata/v4/-data/Entities
+Authorization: Basic alice:

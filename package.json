@@ -1,14 +1,14 @@
 {
-  "name": "dynamic-service",
+  "name": "dynamic-service-consumption",
   "version": "1.0.0",
   "description": "Dynamic Service Call",
-  "repository": "https://github.com/gregorwolf/dynamic-service",
+  "repository": "https://github.com/gregorwolf/dynamic-service-consumption",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@sap-cloud-sdk/http-client": "^3",
-    "@sap/cds": "^7",
-    "@sap/cds-dk": "^7",
+    "@sap/cds": "^8",
+    "@sap/cds-dk": "^8",
     "express": "^4"
   },
   "devDependencies": {
