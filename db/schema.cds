@@ -8,4 +8,6 @@ entity Service : cuid {
     destination : String  @(title: '{i18n>Destination}');
     path        : String  @(title: '{i18n>Path}');
     active      : Boolean @(title: '{i18n>Active}');
+    kind        : String  @(title: '{i18n>Kind}');
+    openapi     : String  @(title: '{i18n>OpenAPI}');
 }

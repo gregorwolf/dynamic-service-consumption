@@ -18,6 +18,13 @@
     "start": "cds run --port 4005"
   },
   "cds": {
+    "log": {
+      "levels": {
+        "dynamic": "debug",
+        "remote": "debug",
+        "rest": "debug"
+      }
+    },
     "requires": {
       "db": {
         "kind": "sqlite",
